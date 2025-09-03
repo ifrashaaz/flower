@@ -12,7 +12,7 @@
 
  body {
    margin: 0;
-   min-height: 100vh;
+   height: 100vh;
    /* background: radial-gradient(circle at center, #000000 70%, #0a0a0a); */
    display: flex;
    justify-content: center;
@@ -20,7 +20,7 @@
    background-color: var(--dark-color);
    overflow: hidden;
    color: white;
-   /* perspective: 1000px; */
+   perspective: 1000px;
    font-family: Arial, Helvetica, sans-serif;
 
  }
@@ -94,19 +94,14 @@
  }
 
  .flowers {
-   /* margin-top: 30px; */
-   width: 100%;
-   height: 100vh;
+   margin-top: 30px;
    position: relative;
    transform: scale(0.9);
    /* display: none; */
    display: flex;
    justify-content: center;
-   align-items: flex-end;
-   /* overflow: hidden; */
-   /* margin-top: 30px; */
-   transform-origin: center bottom;
-   margin: 0 auto;
+   align-items: center;
+   margin-top: 30px;
  }
 
  /* Hide flowers initially */
@@ -116,7 +111,7 @@
    transition: all 0.8s ease;
    pointer-events: none;
    margin-top: 30vh;
-   /* margin-left: 4em; */
+   margin-left: 4em;
    position: relative;
    /* transform: scale(0.9); */
  }
@@ -1808,37 +1803,20 @@
    animation-play-state: paused !important;
  }
 
- /* Make flowers responsive */
-.flowers {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  /* overflow: hidden;       */
-   /* prevent overflow */
-  transform-origin: center bottom;
-  margin: 0 auto;
-}
-
-/* Default scaling */
-
-
-/* Tablet screens */
-@media (max-width: 1024px) {
-  #flowers {
+ @media (max-width: 1024px) {
+  #Flower {
     transform: scale(0.8);
   }
 }
 
-/* Small tablets / landscape phones */
 @media (max-width: 768px) {
-  #flowers {
+  #Flower {
     transform: scale(0.6);
   }
 }
 
-/* Mobile phones */
-@media (max-width: 600px) {
-  #flowers {
+@media (max-width: 480px) {
+  #Flower {
     transform: scale(0.45);
   }
 }
